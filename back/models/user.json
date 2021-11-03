@@ -1,0 +1,20 @@
+[
+    {
+        "name" : "lsh1",
+        "id" : "test1",
+        "password" : "1111",
+        "com" : {
+            "comNo" : 1,
+            "isCommute" : false
+        }
+    },
+    {
+        "name" : "lsh2",
+        "id" : "test2",
+        "password" : "2222",
+        "com" : {
+            "comNo" : 2,
+            "isCommute" : false
+        }
+    }
+]

@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Mainview from '@/views/Mainview.vue'
 import BurnonCafeView from '@/views/company/food/cafe/BurnonCafeView.vue'
 import MyRoom from '@/views/MyRoom.vue';
+import MyCompany from '@/views/MyCompany.vue';
+import Commute from '@/views/Commute.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +17,16 @@ const routes = [
     path: '/myroom',
     name: 'MyRoom',
     component: MyRoom
+  },
+  {
+    path: '/mycompany',
+    name: 'MyCompany',
+    component: MyCompany
+  },
+  {
+    path: '/mycompany/commute',
+    name: 'Commute',
+    component: Commute
   },
   {
     path: '/burnoncafe',
