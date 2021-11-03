@@ -2,6 +2,7 @@
   <div>
       mainview
       <test></test>
+      <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link>
   </div>
 </template>
 
@@ -13,6 +14,6 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
+<style scoped>
+  .nav {text-decoration: none; font-size: 50px; color:rgb(255, 140, 0);}
+</style>>
