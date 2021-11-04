@@ -10,10 +10,9 @@ router.get('/', function(req, res, next) {
   }
 });
 
-router.get('/mycompany/commute', function(req, res, next) {
+router.get('/mycompany/commute/:userId', function(req, res, next) {
   try {
-    console.log(req);
-    console.log('hi');
+    console.log(req.params.userId);
     res.json({ User });
   } catch (error) {
     console.log(error);
