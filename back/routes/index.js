@@ -12,7 +12,8 @@ router.get('/', function(req, res, next) {
 
 router.get('/mycompany/commute/:userId', function(req, res, next) {
   try {
-    console.log(req.params.userId);
+    const comId = req.params.userId;
+    console.log(comId);
     res.json({ User });
   } catch (error) {
     console.log(error);

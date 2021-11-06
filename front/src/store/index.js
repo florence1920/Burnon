@@ -5,7 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isCommute : ''
+    isCommute : '',
+    globalId : 'test1'
   },
   mutations: {
     SET_USER(state, isCommute){
@@ -16,8 +17,8 @@ export default new Vuex.Store({
     async GET_USER(context, userId){
       const response = await getUser(userId);
       console.log(userId);
-      console.log(response);
-      context.commit('SET_USER',userId);
+      let userCommute = response.data.User[0].com.isCommute;
+      context.commit('SET_USER',userCommute);
     }
   },
   modules: {
