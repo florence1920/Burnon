@@ -12,5 +12,4 @@
 
 
 ## ✔ How to run (on VScode)
-1. cd front > npm i @vue/cli@3.2.1
-2. cd back > npm run serve
+front/back > npm i
