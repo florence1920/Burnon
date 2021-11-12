@@ -11,5 +11,5 @@
 4. jQuery
 
 
-## 💻 Domain
+## 💻 URL
 https://Burnon.kr
