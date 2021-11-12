@@ -20,4 +20,19 @@ router.get('/mycompany/commute/:userId', function(req, res, next) {
   }
 });
 
+router.get('/test/:userId', function(req, res, next) {
+  try {
+    const comId = req.params.userId;
+    let userName = '';
+    User.forEach(users => {
+      if(users.id == comId){
+        userName = users.name;
+      }
+    });
+    res.json({ username : userName });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 module.exports = router;

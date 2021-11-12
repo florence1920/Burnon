@@ -5,6 +5,7 @@ import BurnonCafeView from '@/views/company/food/cafe/BurnonCafeView.vue'
 import MyRoom from '@/views/MyRoom.vue';
 import MyCompany from '@/views/MyCompany.vue';
 import Commute from '@/views/Commute.vue';
+import TestView from '@/views/TestView.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -32,6 +33,11 @@ const routes = [
     path: '/burnoncafe',
     name: 'BurnonCafeView',
     component: BurnonCafeView
+  },
+  {
+    path: '/test/:userId',
+    name: 'test',
+    component: TestView
   },
   
 ]
