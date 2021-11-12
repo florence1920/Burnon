@@ -12,4 +12,9 @@ function getUser(userId){
     return axios.get(url);
 }
 
-export {getRes,getUser};
+function getUserInfo(userId){
+    const url = `http://localhost:5000/test/${userId}`
+    return axios.get(url);
+}
+
+export {getRes,getUser,getUserInfo};

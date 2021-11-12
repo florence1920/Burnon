@@ -35,7 +35,7 @@ const routes = [
     component: BurnonCafeView
   },
   {
-    path: '/test',
+    path: '/test/:userId',
     name: 'test',
     component: TestView
   },
