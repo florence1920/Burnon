@@ -11,5 +11,5 @@
 4. jQuery
 
 
-## ✔ How to run (on VScode)
-front/back > npm i
+## 💻 Domain
+https://Burnon.kr
