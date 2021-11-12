@@ -6,6 +6,7 @@ import MyRoom from '@/views/MyRoom.vue';
 import MyCompany from '@/views/MyCompany.vue';
 import Commute from '@/views/Commute.vue';
 import TestView from '@/views/TestView.vue';
+import SignupView from '@/views/SignupView.vue';
 Vue.use(VueRouter)
 
 const routes = [
@@ -38,6 +39,11 @@ const routes = [
     path: '/test/:userId',
     name: 'test',
     component: TestView
+  },
+  {
+    path: '/signup',
+    name: 'signup',
+    component: SignupView
   },
   
 ]

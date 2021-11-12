@@ -3,6 +3,7 @@
       mainview
       <test></test>
       <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link> || 
+      <router-link to="/signup" class="nav">회원 가입</router-link> || 
       <button v-on:click="path($store.state.globalId)">Test 바로가기</button>
   </div>
 </template>

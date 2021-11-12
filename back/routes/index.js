@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var User = require('../models/user.json')
+var User = require('../models/User.js')
 /* GET home page. */
 router.get('/', function(req, res, next) {
   try {
@@ -34,5 +34,17 @@ router.get('/test/:userId', function(req, res, next) {
     console.log(error);
   }
 });
+
+router.post('/signup', (req,res)=>{
+  const user = new User(req.body);
+  user.save((error, saved) =>{
+    if(error){
+      console.log(error);
+    }else{
+      console.log(saved);
+      res.send(saved)
+    }
+  });
+})
 
 module.exports = router;
