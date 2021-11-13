@@ -1,9 +1,9 @@
 <template>
-  <div>
-      <div class="box">
-          안녕 나 승헌
-      </div>
-  </div>
+    <div>
+        <div class="box">
+           나는 앤피씨
+        </div>
+    </div>
 </template>
 
 <script>
