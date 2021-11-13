@@ -8,6 +8,12 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var cors = require('cors');
 var app = express();
+var mongoose = require('mongoose');
+//mongoose
+mongoose.connect('mongodb+srv://admin:admin@cluster0.srv2n.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
+  .then(()=> { console.log('MongoDB Connected');})
+  .catch(err => {console.log(err);})
+  
 //cors
 app.use(cors());
 // view engine setup

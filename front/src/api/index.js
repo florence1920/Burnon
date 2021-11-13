@@ -17,4 +17,10 @@ function getUserInfo(userId){
     return axios.get(url);
 }
 
-export {getRes,getUser,getUserInfo};
+function register(user){
+    const url = `http://localhost:5000/signup`
+    return axios.post(url,user);
+}
+
+export {getRes,getUser,getUserInfo,register };
+
