@@ -20,6 +20,9 @@ const UserSchema = mongoose.Schema({
     },
     goal:{
         type: String
+    },
+    job :{
+        type: String
     }
 })
 

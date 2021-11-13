@@ -35,16 +35,8 @@ router.get('/test/:userId', function(req, res, next) {
   }
 });
 
-router.post('/signup', (req,res)=>{
-  const user = new User(req.body);
-  user.save((error, saved) =>{
-    if(error){
-      console.log(error);
-    }else{
-      console.log(saved);
-      res.send(saved)
-    }
-  });
-})
+router.get('/state', function(req,res) {
+  res.send('cookie : ' + req.cookie.user);
+});
 
 module.exports = router;
