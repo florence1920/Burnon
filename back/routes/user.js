@@ -75,7 +75,8 @@ router.post('/login', (req,res)=>{
           res.cookie('user', token);
           res.status(201).json({
             result: 'ok',
-            token
+            token,
+            user_id : user.id
           });
 
         } else {

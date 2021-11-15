@@ -25,7 +25,16 @@
 
 <script>
 export default {
+    methods: {
+        getBio() {
+            console.log('회원 정보 가져오기');
+            //getUserBio();
 
+        }
+    },
+    created () {
+        this.getBio();
+    },
 }
 </script>
 
