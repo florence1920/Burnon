@@ -8,6 +8,7 @@ import Commute from '@/views/Commute.vue';
 import TestView from '@/views/TestView.vue';
 import SignupView from '@/views/SignupView.vue';
 import LoginView from '@/views/LoginView.vue';
+import ModifyView from '@/views/ModifyView';
 Vue.use(VueRouter)
 
 const routes = [
@@ -50,6 +51,11 @@ const routes = [
     path: '/user/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/user/modify',
+    name: 'modify',
+    component: ModifyView
   },
   
 ]
