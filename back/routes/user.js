@@ -59,15 +59,18 @@ router.post('/login', (req,res)=>{
           
           // jwt
           var token = jwt.sign(
+            //토큰에 들어가는 정보
             {
               user_id : user.id
             },
+            //시크릿 키
             YOUR_SECRET_KEY,
+            // 그 외 정보들
             {
               expiresIn: '1h'
             }
           );
-
+            
           // cookie
           res.cookie('user', token);
           res.status(201).json({
@@ -81,6 +84,7 @@ router.post('/login', (req,res)=>{
       })
     }
   })
+  
 })
 
 

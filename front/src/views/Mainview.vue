@@ -3,8 +3,9 @@
       mainview
       <test></test>
       <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link> || 
-      <router-link to="/users/signup" class="nav">회원 가입</router-link> || 
-      <button v-on:click="path($store.state.globalId)">Test 바로가기</button>
+      <router-link to="/user/signup" class="nav">회원 가입</router-link> || 
+      <router-link to="/user/login" class="nav">로그인</router-link> || 
+      <button v-on:click="logout">로그아웃</button>
   </div>
 </template>
   

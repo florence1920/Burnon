@@ -24,6 +24,7 @@ export default {
                 password : this.password
             }
             login(userData)
+            this.$router.push('/')
         }
     },
 }
