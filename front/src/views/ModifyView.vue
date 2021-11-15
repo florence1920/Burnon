@@ -6,7 +6,7 @@
 import modifyForm from '../components/modifyForm.vue'
 export default {
     components: { modifyForm },
-
+    
 }
 </script>
 

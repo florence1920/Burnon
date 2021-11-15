@@ -7,7 +7,8 @@ export default new Vuex.Store({
   state: {
     isCommute : '',
     globalId : 'test1',
-    globalName : ''
+    globalName : '',
+    loginId: '',
   },
   mutations: {
     SET_USER(state, isCommute){

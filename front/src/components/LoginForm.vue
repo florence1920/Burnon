@@ -18,12 +18,13 @@ export default {
         }
     },
     methods: {
-        sendBio() {
+        async sendBio() {
             const userData ={
                 id : this.id,
                 password : this.password
             }
-            login(userData)
+            const response = await login(userData)
+            this.$store.state.loginId = response.data.user_id;
             this.$router.push('/')
         }
     },

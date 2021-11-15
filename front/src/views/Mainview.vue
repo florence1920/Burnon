@@ -1,6 +1,7 @@
 <template>
   <div>
       mainview
+      <p>{{this.$store.state.loginId}} 님 로그인을 환영합니다.</p>
       <test></test>
       <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link> || 
       <router-link to="/user/signup" class="nav">회원 가입</router-link> || 
