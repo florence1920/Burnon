@@ -1,6 +1,7 @@
 <template>
     <div>
         <div class="box">
+            <p><span id="user_name">{{this.$store.state.globalName}}</span>님 환영합니다.</p>
             <router-link to='/burnoncafe' class="nav fav">Burnon Cafe</router-link>
             <router-link to='/mycompany' class="nav normal">내 회사</router-link>
             <router-link to='/friend' class="nav fav">친구 방</router-link>
