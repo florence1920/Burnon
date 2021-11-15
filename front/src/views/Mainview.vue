@@ -16,6 +16,9 @@ export default {
   methods: {
     path(userId) {
       this.$router.push(`/test/${userId}`);
+    },
+    logout(){
+      console.log('logout');
     }
   },
 }
