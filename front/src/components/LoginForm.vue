@@ -55,7 +55,7 @@ export default {
     .wrapAll .loginWrap {width: 600px; margin: 0 auto;}
     .wrapAll .loginWrap .login {}
     .wrapAll .loginWrap .login li {}
-    .wrapAll .loginWrap .login li input {width: 100%; height: 40px; margin: 30px 0 0 0; border-bottom: 1px solid #000;}
+    .wrapAll .loginWrap .login li input {width: 100%; height: 40px; margin: 30px 0 0 0; border-bottom: 1px solid #000; text-indent: 10px;}
 
     .wrapAll .loginWrap .btn {width: 100%; height: 50px; background-color: rgb(255, 140, 0); color: #fff; font-weight: 600; margin: 20px 0;}
     .wrapAll .loginWrap .btn:hover {cursor: pointer;}
