@@ -16,7 +16,7 @@
             <ul class="search">
                 <li>비밀번호 찾기</li>
                 <li>아이디 찾기</li>
-                <li>회원가입</li>
+                <router-link to="/user/signup" class="nav">회원 가입</router-link>
             </ul>
         </div>
         </form>
