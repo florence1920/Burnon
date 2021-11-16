@@ -1,5 +1,5 @@
 <template>
-        <div class="vueWrap">
+        <div class="viewWrap">
         <p class="head">회원 정보 수정</p>
         <div class="infoWrap">
             <ul class="info">
@@ -58,17 +58,14 @@ export default {
 
 <style scoped>
 
-    .head {font-size: 40px; font-weight: 600; text-align: center; margin: 100px 0;}
+    .head {font-size: 40px; font-weight: 600; text-align: center; margin: 30px 0;}
 
     .infoWrap {width: 600px; margin: 0 auto;}
-    .infoWrap .info {}
     .infoWrap .info li {overflow: hidden; margin: 30px 0;}
-    .infoWrap .info li p {float: left; font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
+    .infoWrap .info li p {float: left; font-size: 18px; font-weight: 600; margin: 0 0 20px 0; color: #fff;}
     .infoWrap .info li p.sub {float: right; margin: 0 100px 0 0;}
     .infoWrap .info li input {width: 100%; height: 40px; margin: 0 0 20px 0; text-indent: 5px; border-bottom: 1px solid #000;}
-
-
-    .infoWrap  {}
+    
     .infoWrap .btn {width: 100%; height: 40px; background-color: #333; color: #fff; margin: 30px 0;}
 
 </style>

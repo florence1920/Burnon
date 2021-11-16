@@ -8,7 +8,7 @@
           <input type="submit" value="SIGNUP">
       </form>
   </div> -->
-    <div class="wrapAll">
+    <div class="viewWrap">
         <p class="head">회원가입</p>
         
         <div class="infoWrap">
@@ -82,16 +82,13 @@ export default {
 
 <style>
 
-.wrapAll {}
-.wrapAll .head {font-size: 40px; font-weight: 600; text-align: center; margin: 100px 0;}
+.head {font-size: 40px; font-weight: 600; text-align: center; margin: 30px 0;}
 
-.wrapAll .infoWrap {width: 600px; margin: 0 auto;}
-.wrapAll .infoWrap .info {}
-.wrapAll .infoWrap .info li {}
-.wrapAll .infoWrap .info li .tit {font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
-.wrapAll .infoWrap .info li input {width: 100%; height: 40px; text-indent: 5px;  border: 1px solid #000; margin: 0 0 20px 0;}
+.infoWrap {width: 600px; margin: 0 auto;}
+.infoWrap .info li .tit {font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
+.infoWrap .info li input {width: 100%; height: 40px; text-indent: 5px;  border: 1px solid #000; margin: 0 0 20px 0;}
 
-.wrapAll .infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: rgb(255, 140, 0); color: #fff; margin: 30px 0;}
+.infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: rgb(255, 140, 0); color: #fff; margin: 30px 0;}
 
 
 </style>
