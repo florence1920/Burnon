@@ -1,18 +1,9 @@
 <template>
-  <!-- <div>
-      <form v-on:submit.prevent="sendBio">
-          <input type="text" placeholder="아이디를 입력하세요" v-model="id">
-          <input type="text" placeholder="비밀번호를 입력하세요" v-model="password">
-          <input type="text" placeholder="이름을 입력하세요" v-model="name">
-          <input type="number" placeholder="나이를 입력하세요" v-model="age">
-          <input type="submit" value="SIGNUP">
-      </form>
-  </div> -->
-    <div class="wrapAll">
+    <div class="viewWrap">
         <p class="head">회원가입</p>
         
         <div class="infoWrap">
-             <form v-on:submit.prevent="sendBio">
+            <form v-on:submit.prevent="sendBio">
                 <ul class="info">
                     <li>
                         <p class="tit">아이디</p>
@@ -80,18 +71,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
-.wrapAll {}
-.wrapAll .head {font-size: 40px; font-weight: 600; text-align: center; margin: 100px 0;}
+.head {font-size: 40px; font-weight: 600; text-align: center; margin: 30px 0;}
 
-.wrapAll .infoWrap {width: 600px; margin: 0 auto;}
-.wrapAll .infoWrap .info {}
-.wrapAll .infoWrap .info li {}
-.wrapAll .infoWrap .info li .tit {font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
-.wrapAll .infoWrap .info li input {width: 100%; height: 40px; text-indent: 5px;  border: 1px solid #000; margin: 0 0 20px 0;}
+.infoWrap {width: 600px; margin: 0 auto;}
+.infoWrap .info li .tit {font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
+.infoWrap .info li input {width: 100%; height: 40px; text-indent: 5px;  border: 1px solid #000; margin: 0 0 20px 0;}
 
-.wrapAll .infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: rgb(255, 140, 0); color: #fff; margin: 30px 0;}
+.infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: rgb(255, 140, 0); color: #fff; margin: 30px 0;}
 
 
 </style>

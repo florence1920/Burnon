@@ -16,4 +16,5 @@ export default {
   *, a, div, p, ul, li, section, body, input {color:#fff; font-family: 'Noto Sans KR', sans-serif; list-style: none; text-decoration: none; margin: 0; padding: 0; box-sizing: border-box; border: none;}
   .viewWrap {overflow: hidden; width: 100%; height: 100vh; background: #000; padding: 80px 0 0; position: relative; z-index: 1;}
   .viewWrap .desc {color:rgba(255,255,255,.15); font-size:40px; font-weight: 600;}
+  input {color: #000;}
 </style>
