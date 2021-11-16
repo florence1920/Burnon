@@ -12,36 +12,38 @@
         <p class="head">회원가입</p>
         
         <div class="infoWrap">
-            <ul class="info">
-                <li>
-                    <p class="tit">아이디</p>
-                    <input type="text" name="id">
-                </li>
-                <li>
-                    <p class="tit">비밀번호</p>
-                    <input type="password" name="password">
-                </li>
-                <li>
-                    <p class="tit">이름</p>
-                    <input type="text" name="name">
-                </li>
-                <li>
-                    <p class="tit">나이</p>
-                    <input type="text" name="age">
-                </li>
-                <li>
-                    <p class="tit">직업</p>
-                    <input type="text" name="job">
-                </li>
-                <li>
-                    <p class="tit">목표</p>
-                    <input type="text" name="goal">
-                </li>
-            </ul>
+             <form v-on:submit.prevent="sendBio">
+                <ul class="info">
+                    <li>
+                        <p class="tit">아이디</p>
+                        <input type="text" name="id" v-model="id">
+                    </li>
+                    <li>
+                        <p class="tit">비밀번호</p>
+                        <input type="password" name="password" v-model="password">
+                    </li>
+                    <li>
+                        <p class="tit">이름</p>
+                        <input type="text" name="name" v-model="userName">
+                    </li>
+                    <li>
+                        <p class="tit">나이</p>
+                        <input type="text" name="age" v-model="age">
+                    </li>
+                    <li>
+                        <p class="tit">직업</p>
+                        <input type="text" name="job" v-model="job">
+                    </li>
+                    <li>
+                        <p class="tit">목표</p>
+                        <input type="text" name="goal" v-model="goal">
+                    </li>
+                </ul>
+                <div class="btnWrap">   
+                    <input type="submit" value="가입하기" class="btn">
+                </div>
+            </form>
             
-            <div class="btnWrap">   
-                <input type="submit" value="가입하기" class="btn">
-            </div>
         </div>
     </div>
     
@@ -54,8 +56,10 @@ export default {
         return {
             id: '',
             password: '',
-            name: '',
+            userName: '',
             age:'',
+            job:'',
+            goal:''
         }
     },
     methods: {
@@ -63,10 +67,14 @@ export default {
             const userData ={
                 id : this.id,
                 password : this.password,
-                name : this.name,
+                userName : this.userName,
                 age : this.age,
+                job : this.job,
+                goal : this.goal
+            
             }
-            register(userData)
+            register(userData);
+            this.$router.push('/user/login')
         }
     },
 }

@@ -26,7 +26,9 @@ router.post('/signup', (req,res)=>{
         id : user.id,
         password: hashedPassword,
         userName : user.userName,
-        age : user.age
+        age : user.age,
+        job : user.job,
+        goal : user.goal
       });
       newUser.save((error, saved) =>{
         if(error){
@@ -91,6 +93,7 @@ router.post('/login', (req,res)=>{
 //정보수정
 router.get('/modify', async (req,res)=>{
   const userId = req.query.id;
+  console.log(userId);
   try{
     const user = await User.findOne({
       id : userId
