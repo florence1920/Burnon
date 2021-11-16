@@ -88,6 +88,20 @@ router.post('/login', (req,res)=>{
   
 })
 
+//정보수정
+router.get('/modify', async (req,res)=>{
+  const userId = req.query.id;
+  try{
+    const user = await User.findOne({
+      id : userId
+    });
+    res.json({
+      user
+    });
+  }catch(err){
+    res.status(500).json({message : err.message})
+  }
+})
 
 
 module.exports = router;

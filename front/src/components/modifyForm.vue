@@ -24,11 +24,12 @@
 </template>
 
 <script>
+import {getUserBio} from '@/api/index.js'
 export default {
     methods: {
         getBio() {
             console.log('회원 정보 가져오기');
-            //getUserBio();
+            getUserBio('test33');
 
         }
     },
