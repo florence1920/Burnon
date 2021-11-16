@@ -1,6 +1,5 @@
 <template>
-  <div>
-      mainview
+  <div class="viewWrap">
       <test></test>
       <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link> 
   </div>

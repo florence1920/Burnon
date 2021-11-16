@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="viewWrap">
       Burnon 카페에 오신것을 환영합니다.  
       <character></character>
       <speech-bubble></speech-bubble>

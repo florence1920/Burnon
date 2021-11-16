@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="viewWrap">
       <h2>내 회사</h2>
       <router-link to='/mycompany/commute/' class="nav">출퇴근 관리</router-link>
       <button v-on:click="myCommute(globalId)">출퇴근</button>
