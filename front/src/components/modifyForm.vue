@@ -5,15 +5,15 @@
             <ul class="info">
                 <li>
                     <p class="tit">아이디</p>
-                    <p class="sub">test1234</p>
+                    <p class="sub">{{user.id}}</p>
                 </li>
                 <li>
                     <p class="tit">이름</p>
-                    <p class="sub">윤민수</p>
+                    <p class="sub">{{user.userName}}</p>
                 </li>
                 <li>
                     <p class="tit">나이</p>
-                    <p class="sub">19세</p>
+                    <p class="sub">{{user.age}}</p>
                 </li>
                 <li>
                     <p class="tit">비밀번호 변경</p>
@@ -36,10 +36,17 @@
 <script>
 import {getUserBio} from '@/api/index.js'
 export default {
+    data() {
+        return {
+            user: {},
+        }
+    },
     methods: {
-        getBio() {
+        async getBio() {
             console.log('회원 정보 가져오기');
-            getUserBio('test33');
+            const response = await getUserBio(this.$store.state.loginId);
+            console.log(response);
+            this.user = response.data.user;
 
         }
     },
