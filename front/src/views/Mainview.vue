@@ -1,8 +1,10 @@
 <template>
   <div class="viewWrap">
       <test></test>
-      <router-link to="/myroom" class="nav">마이 룸 바로가기</router-link> 
-      <router-link to="/user/modify" class="nav">내 정보 수정</router-link> 
+      <ul class="menu">
+        <router-link to="/myroom"><li>MY ROOM</li></router-link> 
+        <router-link to="/user/modify"><li>MODIFY</li></router-link> 
+      </ul>
   </div>
 </template>
   
@@ -22,5 +24,7 @@ export default {
 </script>
 
 <style scoped>
-  .nav {text-decoration: none; font-size: 50px; color:rgb(255, 140, 0);}
+  .menu {overflow: hidden; position: absolute;top: 130px;left: 50px;}
+  .menu a {float: left; margin: 0 15px 0 0;}
+  .menu a li {background: #333; font-size:25px; font-weight: 400; padding: 15px 25px ;}
 </style>>
