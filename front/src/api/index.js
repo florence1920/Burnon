@@ -27,5 +27,14 @@ function login(user){
     return axios.post(url,user,{withCredentials: true});
 }
 
-export {getRes,getUser,getUserInfo,register,login};
+function getUserBio(userId){
+    const url = `http://localhost:5000/user/modify`
+    return axios.get(url,{
+        params:{
+            id : userId
+        }
+    });
+}
+
+export {getRes,getUser,getUserInfo,register,login, getUserBio};
 
