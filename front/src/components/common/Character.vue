@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div class="box">
-           나는 앤피씨
-        </div>
+    <div class="box">
+        <p class="desc">NPC</p>
     </div>
 </template>
 
@@ -13,5 +11,5 @@ export default {
 </script>
 
 <style scoped>
-    .box {width: 300px; height: 500px; background: rgb(119, 167, 127);}
+    .box {width: 300px; height: 500px; background: #333; padding: 50px;}
 </style>
