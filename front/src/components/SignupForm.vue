@@ -1,18 +1,9 @@
 <template>
-  <!-- <div>
-      <form v-on:submit.prevent="sendBio">
-          <input type="text" placeholder="아이디를 입력하세요" v-model="id">
-          <input type="text" placeholder="비밀번호를 입력하세요" v-model="password">
-          <input type="text" placeholder="이름을 입력하세요" v-model="name">
-          <input type="number" placeholder="나이를 입력하세요" v-model="age">
-          <input type="submit" value="SIGNUP">
-      </form>
-  </div> -->
     <div class="viewWrap">
         <p class="head">회원가입</p>
         
         <div class="infoWrap">
-             <form v-on:submit.prevent="sendBio">
+            <form v-on:submit.prevent="sendBio">
                 <ul class="info">
                     <li>
                         <p class="tit">아이디</p>
@@ -80,7 +71,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 .head {font-size: 40px; font-weight: 600; text-align: center; margin: 30px 0;}
 
