@@ -47,7 +47,6 @@ export default {
             const response = await getUserBio(this.$store.state.loginId);
             console.log(response);
             this.user = response.data.user;
-
         }
     },
     created () {

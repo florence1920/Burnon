@@ -1,25 +1,15 @@
 <template>
   <div class="viewWrap">
-      <test></test>
       <ul class="menu">
-        <router-link to="/myroom"><li>MY ROOM</li></router-link> 
-        <router-link to="/user/modify"><li>MODIFY</li></router-link> 
+        <router-link to="/room"><li>MY ROOM</li></router-link> 
+        <router-link to="/user/modify"><li>MODIFY</li></router-link>
+        <router-link to="/reco"><li>RECOMMEND</li></router-link>
       </ul>
   </div>
 </template>
   
 <script>
-import Test from '../components/Test.vue'
 export default {
-  components: { Test },
-  methods: {
-    path(userId) {
-      this.$router.push(`/test/${userId}`);
-    },
-    logout(){
-      console.log('logout');
-    }
-  },
 }
 </script>
 

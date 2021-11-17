@@ -6,12 +6,6 @@ var jwt = require('jsonwebtoken');
 require('dotenv').config();
 var YOUR_SECRET_KEY = process.env.SECRET_KEY;
 
-
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
-});
-
 // 회원가입
 router.post('/signup', (req,res)=>{
   const user = new User(req.body);
