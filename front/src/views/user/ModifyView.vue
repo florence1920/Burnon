@@ -3,13 +3,12 @@
 </template>
 
 <script>
-import modifyForm from '../components/modifyForm.vue'
+import ModifyForm from '@/components/user/ModifyForm.vue';
 export default {
-    components: { modifyForm },
+    components: {ModifyForm },
     
 }
 </script>
 
-<style>
-
+<style scoped>
 </style>
