@@ -17,4 +17,4 @@ export default {
   .menu {overflow: hidden; position: absolute;top: 130px;left: 50px;}
   .menu a {float: left; margin: 0 15px 0 0;}
   .menu a li {background: #333; font-size:25px; font-weight: 400; padding: 15px 25px ;}
-</style>>
+</style>
