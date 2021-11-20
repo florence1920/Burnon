@@ -79,7 +79,7 @@ export default {
 .infoWrap .info li .tit {font-size: 18px; font-weight: 600; margin: 0 0 20px 0;}
 .infoWrap .info li input {width: 100%; height: 40px; text-indent: 5px;  border: 1px solid #000; margin: 0 0 20px 0;}
 
-.infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: rgb(255, 140, 0); color: #fff; margin: 30px 0;}
+.infoWrap .btnWrap .btn {width: 100%; height: 60px; background-color: #333; color: #fff; margin: 30px 0;}
 
 
 </style>

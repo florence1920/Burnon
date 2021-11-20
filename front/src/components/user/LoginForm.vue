@@ -53,7 +53,7 @@ export default {
     .loginWrap {width: 600px; margin: 0 auto;}
     .loginWrap .login li input {width: 100%; height: 40px; margin: 30px 0 0 0; border-bottom: 1px solid #000; text-indent: 10px;}
 
-    .loginWrap .btn {width: 100%; height: 50px; background-color: rgb(255, 140, 0); font-weight: 600; margin: 20px 0;}
+    .loginWrap .btn {width: 100%; height: 50px; background-color: #333; color: #fff; font-weight: 600; margin: 20px 0;}
     .loginWrap .btn:hover {cursor: pointer;}
 
     .loginWrap .search {overflow: hidden;}
