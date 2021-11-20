@@ -23,7 +23,7 @@ function getJob(goal){
     const url = `http://localhost:5000/recommend`
     return axios.get(url,{
         params:{
-            goal 
+            goal
         }
     });
 }
