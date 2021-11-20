@@ -38,7 +38,9 @@ import {getUserBio} from '@/api/index.js'
 export default {
     data() {
         return {
-            user: {},
+            user: {
+                
+            },
         }
     },
     methods: {

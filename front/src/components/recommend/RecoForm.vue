@@ -4,7 +4,7 @@
         <div class="recoWrap">
             <form action=""></form>
             <div class="goal">
-                <input type="text" placeholder="당신이 원하는 목표를 작성해 주세요.">
+                <input type="text" placeholder="당신이 원하는 목표를 작성해 주세요." v-model="goal">
                 <input type="submit" value="추천 받기" class="btn" />
             </div>
             
@@ -19,8 +19,22 @@
 </template>
 
 <script>
+import { getJob } from '@/api/index.js'
 export default {
-
+    data() {
+        return {
+            goal: ''
+        }
+    },
+    methods: {
+        getJobcar() {
+            let userGoal = this.goal;
+            getJob(userGoal);
+        }
+    },
+    created () {
+        this.getJobcar();
+    },
 }
 </script>
 
