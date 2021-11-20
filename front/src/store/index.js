@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import { getUser, getUserInfo } from '@/api/index.js'
+import { getUser, getUserInfo, getJob } from '@/api/index.js'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
@@ -9,6 +9,7 @@ export default new Vuex.Store({
     globalId : 'test1',
     globalName : '',
     loginId: '',
+    job:{}
   },
   mutations: {
     SET_USER(state, isCommute){
@@ -16,6 +17,9 @@ export default new Vuex.Store({
     },
     SET_USERNAME(state, username){
       state.globalName = username;
+    },
+    SET_JOBCAREER(state, job){
+      state.job = job;
     }
   },
   actions: {
@@ -30,6 +34,11 @@ export default new Vuex.Store({
       const response = await getUserInfo(userId);
       console.log(response.data.username);
       context.commit('SET_USERNAME',response.data.username);
+    },
+    async GET_JOB(context, userGoal){
+      const response = await getJob(userGoal);
+      //console.log();
+      context.commit('SET_JOBCAREER',response.data.job);
     }
   },
   modules: {

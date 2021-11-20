@@ -2,12 +2,10 @@
     <div class="viewWrap">
         <p class="head">환영합니다 test님 추천을 받아보시겠어요?</p>
         <div class="recoWrap">
-            <form v-on:submit.prevent="getJobCar">
             <div class="goal">
                 <input type="text" placeholder="당신이 원하는 목표를 작성해 주세요." v-model="goal">
-                <input type="submit" value="추천 받기" class="btn" />
+                <input type="submit" value="추천 받기" class="btn" v-on:click="getJobCar" />
             </div>
-            </form>
             
             <!-- <div class="age">
                 <input type="text" placeholder="당신의 나이를 작성해주세요.">
@@ -20,7 +18,7 @@
 </template>
 
 <script>
-import { getJob } from '@/api/index.js'
+
 export default {
     data() {
         return {
@@ -30,7 +28,7 @@ export default {
     methods: {
         getJobCar() {
             let userGoal = this.goal;
-            getJob(userGoal);
+            this.$store.dispatch('GET_JOB',userGoal);
         }
     }
 }
