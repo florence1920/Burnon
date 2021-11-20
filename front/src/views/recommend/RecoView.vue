@@ -13,6 +13,12 @@ export default {
         RecoForm,
         RecoResultForm,
     },
+    methods: {
+        
+    },
+    created () {
+        
+    },
 
 }
 </script>
