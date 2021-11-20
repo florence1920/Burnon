@@ -15,4 +15,13 @@ function ageCategory(user_age){
     }
 }
 
+
+function ageCategory(job){
+    job.lifecycle.forEach(i => {
+        if(i.min < user.age <= i.max) {
+            console.log(i.ment);
+        }
+    });
+}
+
 export { ageCategory }
