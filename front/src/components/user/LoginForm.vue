@@ -9,7 +9,7 @@
                     <input type="text" name="id" placeholder="ID" v-model="id">
                 </li>
                 <li>
-                    <input type="text" name="password" placeholder="Password" v-model="password">
+                    <input type="password" name="password" placeholder="Password" v-model="password">
                 </li>
             </ul>
             <input type="submit" value="LOGIN" class="btn"/>

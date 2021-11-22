@@ -64,7 +64,7 @@ export default {
     .infoWrap {width: 600px; margin: 0 auto;}
     .infoWrap .info li {overflow: hidden; margin: 30px 0;}
     .infoWrap .info li p {float: left; font-size: 18px; font-weight: 600; margin: 0 0 20px 0; color: #fff;}
-    .infoWrap .info li p.sub {float: right; margin: 0 100px 0 0;}
+    .infoWrap .info li p.sub {float: right;}
     .infoWrap .info li input {width: 100%; height: 40px; margin: 0 0 20px 0; text-indent: 5px; border-bottom: 1px solid #000;}
     
     .infoWrap .btn {width: 100%; height: 40px; background-color: #333; color: #fff; margin: 30px 0;}
