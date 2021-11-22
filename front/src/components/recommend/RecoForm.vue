@@ -2,10 +2,9 @@
     <div>
         <p class="head">환영합니다 test님 추천을 받아보시겠어요?</p>
         <div class="recoWrap">
-            <form action=""></form>
             <div class="goal">
-                <input type="text" placeholder="당신이 원하는 목표를 작성해 주세요.">
-                <input type="submit" value="추천 받기" class="btn" />
+                <input type="text" placeholder="당신이 원하는 목표를 작성해 주세요." v-model="goal">
+                <input type="submit" value="추천 받기" class="btn" v-on:click="getJobCar" />
             </div>
             
             <!-- <div class="age">
@@ -19,8 +18,19 @@
 </template>
 
 <script>
-export default {
 
+export default {
+    data() {
+        return {
+            goal: ''
+        }
+    },
+    methods: {
+        getJobCar() {
+            let userGoal = this.goal;
+            this.$store.dispatch('GET_JOB',userGoal);
+        }
+    }
 }
 </script>
 

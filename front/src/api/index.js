@@ -19,5 +19,14 @@ function getUserBio(userId){
     });
 }
 
-export {register,login, getUserBio};
+function getJob(goal){
+    const url = `http://localhost:5000/recommend`
+    return axios.get(url,{
+        params:{
+            goal
+        }
+    });
+}
+
+export {register,login, getUserBio, getJob};
 
