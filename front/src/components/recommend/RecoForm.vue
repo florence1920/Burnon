@@ -1,5 +1,5 @@
 <template>
-    <div class="viewWrap">
+    <div>
         <p class="head">환영합니다 test님 추천을 받아보시겠어요?</p>
         <div class="recoWrap">
             <div class="goal">
@@ -39,7 +39,7 @@ export default {
 .head {font-size: 40px; font-weight: 600; text-align: center; margin: 30px 0;}
 
 .recoWrap {width: 50%; margin: 0 auto;}
-.recoWrap input {width: 100%; height: 40px; margin: 30px 0 0 0; border-bottom: 1px solid #000;  text-indent: 10px;}
-.recoWrap .btn {width: 100%; height: 50px; background-color: #333; color: #fff; font-weight: 600;}
+.recoWrap input {display: block; width: 50%; height: 40px; margin: 30px 0 0 0; border-bottom: 1px solid #000; text-indent: 10px; margin: 30px auto;}
+.recoWrap .btn {display: block; width: 50%; height: 50px; background-color: #333; color: #fff; font-weight: 600; margin: 30px auto;}
 .recoWrap .btn:hover {cursor: pointer;}
 </style>
