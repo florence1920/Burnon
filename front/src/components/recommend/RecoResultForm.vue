@@ -1,5 +1,5 @@
 <template>
-    <div class="viewWrap">
+    <div>
         <p class="head"><span>test200 </span>님은 <span>고등학생 </span> 이시군요.</p>
         <p class="head">추천을 확인해 보세요</p>
         <ul class="recoWrap">
